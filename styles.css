@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Inter", serif;
+    background-image: linear-gradient(rgba(21, 20, 71, .926), rgba(27, 13, 89, 0.96)),url('https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 996px;
+    margin: 0 auto;
+}
+ header ul {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header ul li {
+    list-style: none;
+}
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+.logo {
+    width: 240px;
+    cursor: pointer;
+}
+.logo img {
+    width: 100%;
+}
+.logo-primary {
+    color: #03c213;
+}
+.title {
+    color: #fff;
+    margin: 2rem 0;
+}
+.movie-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px 10px;
+}
+.movie-container .movie {
+    position: relative;
+    width: 320px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    background-color: #41317a;
+    border-radius: 5px;
+    padding: 5px;
+}
+.movie-container .movie img {
+    max-height: 400px;
+    width: 100%;
+    height: 350px;
+    border-radius: 5px;
+    display: block;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: top;
+    cursor: pointer;
+}
+.movie-container .movie .info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+.movie-container .movie .info .counts {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.movie-container .movie .info .movie-title {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 20px 10px;
+}
+.vote-average {
+    background-color: #2da515;
+    border-radius: 50%;
+    padding: 10px;
+    color: #fff;
+}
+.release-date {
+    background-color: #2da515;
+    border-radius: 5px;
+    padding: 10px;
+    color: #fff;
+}
