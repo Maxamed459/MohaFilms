@@ -107,6 +107,10 @@ header .menu {
         width: 100%;
         padding: 10px 15px;
     }
+    .logo {
+        width: 140px;
+        cursor: pointer;
+    }
     .container {
         width: 100%;
     }
