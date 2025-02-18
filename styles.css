@@ -14,7 +14,7 @@ body {
     max-width: 996px;
     margin: 0 auto;
 }
- header ul {
+header ul {
     padding: 30px 0;
     display: flex;
     justify-content: space-between;
@@ -38,6 +38,103 @@ header ul li a {
 .logo-primary {
     color: #03c213;
 }
+/* hero */
+.hero {
+    width: 100%;
+    max-height: 100vh;
+}
+.container-hero {
+    max-width: 996px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.hero-img {
+    max-width: 50%;
+    padding-left: 60px;
+
+}
+.hero-img img {
+    width: 100%;
+    border-radius: 10px;
+}
+.hero-text {
+    max-width: 50%;
+}
+.hero-text h1 {
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+.hero-text .adds {
+    color: #03C213;
+}
+.hero-text p {
+    font-size: 18px;
+    color: #9f9f9f;
+    padding-bottom: 15px;
+}
+.hero-text .watch {
+    padding: 10px 20px ;
+    background-color: #03C213;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 3px;
+    margin-top: 15px;
+    text-align: center;
+}
+.hero-text .watch:hover {
+    background-color: white;
+    color: #03C213;
+}
+header .menu {
+    width: 22px;
+    height: auto;
+    display: none;
+}
+/* header & hero sectio responsiveness */
+@media(max-width: 768px) {
+    header .h-watch {
+        display: none;
+    }
+    header .menu {
+        display: block;
+    }
+    header ul {
+        width: 100%;
+        padding: 10px 15px;
+    }
+    .container {
+        width: 100%;
+    }
+    .hero {
+        min-height: 100vh;
+        padding-top: 10%;
+    }
+    .container-hero {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 20px auto;
+    }
+    .hero-img {
+        display: none;
+    }
+    .hero-text h1 {
+        font-size: 40px;
+        color: #fff;
+        padding-bottom: 15px;
+        text-align: left;
+    }
+    .hero-text p {
+        text-align: left;
+        font-size: 18px;
+        color: #9f9f9f;
+        padding-bottom: 15px;
+    }
+}
 .title {
     color: #fff;
     margin: 2rem 0;
@@ -46,6 +143,20 @@ header ul li a {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px 10px;
+}
+/* mos popular section responsiveness */
+@media(max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 5px 10px;
+        margin: 0 auto;
+    } 
 }
 .movie-container .movie {
     position: relative;
