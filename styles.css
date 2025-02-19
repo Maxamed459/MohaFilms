@@ -227,6 +227,7 @@ header .menu {
 }
 .f-text {
     max-width: 50%;
+    /* margin: 0 auto; */
     color: rgb(175, 175, 175);
 }
 .f-logo {
@@ -246,4 +247,25 @@ header .menu {
     background-color: #03C213;
     padding: 5px;
     border-radius: 5px;
+}
+@media(max-width: 768px) {
+    .f-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+    .f-text {
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .f-logo {
+        width: 240px;
+        margin: 0 auto;
+    }
+
 }
