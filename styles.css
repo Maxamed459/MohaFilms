@@ -212,3 +212,38 @@ header .menu {
     padding: 10px;
     color: #fff;
 }
+/* footer */
+.footer {
+    margin-top: 50px;
+    background-color: #41317a;
+    padding: 3% 0;
+}
+.f-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    margin: 0 auto;
+}
+.f-text {
+    max-width: 50%;
+    color: rgb(175, 175, 175);
+}
+.f-logo {
+    width: 340px;
+}
+.f-logo img {
+    width: 100%;
+}
+.footer .social {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.footer .social img {
+    width: 20%;
+    background-color: #03C213;
+    padding: 5px;
+    border-radius: 5px;
+}
